@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+  <!-- html below sets content to adjest to different devices' widths accordingly -->    
+	<meta name="viewport" content='width=device-width, initial-scale=1,'>
+  	<frame scrolling="auto|yes|no">
+
+  <!-- normalization -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+  <!-- links to stylesheet -->
+    <link href="tube.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
+	<title>YOUTube test API</title>
+
+	<meta name='description' content="Test the YouTube API">
+
+</head>
+<body>
+	<header class="header">
+			<h1>Search<a href="http://www.ign.com/" target="_blank"><img src="https://tse1.mm.bing.net/th?id=OIP.VOXPS_uJ89BpPln_mVc63gHaCu&pid=15.1&P=0&w=100&h=80" alt="ign logo"></a></h1>
+			<p>Search and view the latest IGN videos</p>
+		</header>
+		<section class="searchbar"> 
+			<form id="search-form" name="search-form" onsubmit="return search()">
+				<div class="fieldcontainer">
+					<input type="search" id="query" class="search-field" placeholder="Search for Videos...">
+					<input type="submit" name="search-btn" id="search-btn" value="Search">
+				</div>
+			</form>
+		</section>
+	<div id="container" class="container">
+		<div class="results">
+			<h2>Results</h2>
+			<ul id="results"></ul>
+		</div>
+		<div class="topHeadlines" id="topHeadlines">
+			<h2>Top Headlines</h2>
+			<ul id="topresults"></ul>
+		</div>
+		<footer class="footer">
+			<p> Copyright PDesigns &copy; 2018, All Rights Reserved 
+		</footer>
+	</div>
+	<script src="tube.js"></script>
+</body>
+</html>
