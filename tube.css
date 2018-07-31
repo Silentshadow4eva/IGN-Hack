@@ -59,8 +59,10 @@ footer {
 	color: red;
     	opacity: 0.8;
     	border-radius: 5px;
+}
 
-
+.container {
+	width: 70%;
 }
 
 #search-form {
